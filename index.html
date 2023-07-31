@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App-FetchAPI</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
     <h1>Javascript Weather App Using Fetch Api</h1>
     <div id="container">
         <div id="input">
             <input type="text" placeholder="Enter City Name" id="inputbox"></input>
-            <button id="btn">Search</button>
+            <p class="error">City Not Found</p>
+            <button id="btn" onclick="getData()">Search</button>
         </div>
         <div id="tempcontainer">
             <img src="./Assets/cloudy.png" alt="Internet Connection is Poor" id="imgsrc">
-            <p id="temp">22°c</p>
-            <h1 id="cityName">Lodon</h1>
+            <p id="tempp"></p>
+            <h1 id="cityName"></h1>
         </div>
-        <div id="imgcontainer"></div>
-        <div id="wahcontainer"></div>
+        <div id="wahcontainer">
+            <div id="humidity">
+                <img src="./Assets/humidity.png" alt="Internet Connection is Poor" id="humimg">
+                <div id="texttag">
+                    <p>Humidity</p>
+                    <p id="humresult"></p>
+                </div>
+            </div>
+            <div id="wind">
+                <img src="./Assets/wind.png" alt="Internet Connection is Poor" id="humimg">
+                <div id="texttag">
+                    <p>Wind</p>
+                    <p id="winresult"></p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
