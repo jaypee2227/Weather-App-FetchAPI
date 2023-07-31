@@ -53,6 +53,7 @@ h1{
     border-radius: 5px;
     width: 100%;
     font-size: large;
+    cursor: pointer;
 }
 
 #tempcontainer{
@@ -81,19 +82,63 @@ h1{
     margin-top: 60px;
     color: black;
     position: absolute;
+    top: 300px;
     bottom: 200px;
     left: 235px;
     font-size: 1.5em;
 }
 
-#temp{
+#tempp{
     text-align: center;
     font-size: large;
     margin-top: 50px;
     color: black;
     position: absolute;
+    top: 340px;
     bottom: 200px;
     left: 170px;
     font-size: 1.5em;
     font-weight: 700;
+}
+
+#humidity{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+
+#humimg{
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
+
+#texttag{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    line-height: 25px;
+}
+
+p{
+    font-size: large;
+    font-weight: bold;
+}
+
+#wind{
+    display: flex;
+    position: absolute;
+    right: 130px;
+    bottom: 40px;
+}
+
+.error{
+    color: red;
+    margin-top: 10px;
+    font-size: medium;
+    display: none;
 }
