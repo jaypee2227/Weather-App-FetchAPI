@@ -14,8 +14,14 @@ async function getData() {
 
   if (result.cod === `404`) {
     errorr.style.display = "block";
+    tempp.innerHTML = "";
+    humidityy.innerHTML = "";
+    win.innerHTML = "";
+    cityname.innerHTML = "";
+    image.style.display = "none";
   } else {
     errorr.style.display = "none";
+    image.style.display = "block";
   }
 
   cityname.innerHTML = result.name;
