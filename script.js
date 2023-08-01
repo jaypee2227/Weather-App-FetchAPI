@@ -22,12 +22,11 @@ async function getData() {
   } else {
     errorr.style.display = "none";
     image.style.display = "block";
+    cityname.innerHTML = result.name;
+    tempp.innerHTML = Math.round(result.main.temp) + "°c";
+    humidityy.innerHTML = Math.round(result.main.humidity) + "%";
+    win.innerHTML = Math.round(result.wind.speed) + "KMPH";
   }
-
-  cityname.innerHTML = result.name;
-  tempp.innerHTML = Math.round(result.main.temp) + "°c";
-  humidityy.innerHTML = Math.round(result.main.humidity) + "%";
-  win.innerHTML = Math.round(result.wind.speed) + "KMPH";
 
   if (result.weather[0].main == "Clouds") {
     image.src = "./Assets/cloudy.png";
